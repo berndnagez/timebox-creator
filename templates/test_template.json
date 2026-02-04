@@ -1,0 +1,52 @@
+    {
+      "box_list": [
+        {
+          "title": "VN JAT",
+          "type": "default",
+          "description": "Test text",
+          "zone": "Europe/Berlin",
+          "start": "09:15",
+          "end": "10:45"
+        },
+        {
+          "title": "15 Min. Pause",
+          "type": "15min-break",
+          "description": "ruhig Atmen, aus dem Fenster schauen\nQi Gong",
+          "zone": "Europe/Berlin",
+          "start": "10:45",
+          "end": "11:00"
+        },
+        {
+          "title": "timebox-creator",
+          "type": "deep-work",
+          "description": "siehe todoist",
+          "zone": "Europe/Berlin",
+          "start": "11:00",
+          "end": "12:30"
+        },
+        {
+          "title": "Handbuch",
+          "type": "10min-rule",
+          "description": "wenn ich in Schwung bin: weitermachen!",
+          "zone": "Europe/Berlin",
+          "start": "13:00",
+          "end": "13:10"
+        },
+        {
+          "title": "50 Min. Platzhalter",
+          "type": "50min-placeholder",
+          "description": "ruhig Atmen, aus dem Fenster schauen\n\nOder: weiterarbeiten",
+          "zone": "Europe/Berlin",
+          "start": "13:10",
+          "end": "14:00"
+        },
+        {
+          "title": "Arbeitstag abschließen",
+          "type": "default",
+          "description": "Nächste Schritte für morgen planen\nArbeitsplatz aufräumen\nalles zu todoist",
+          "zone": "Europe/Berlin",
+          "start": "15:30",
+          "end": "16:00"
+        }
+      ]
+    }
