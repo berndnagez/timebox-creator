@@ -1,7 +1,7 @@
 import icalendar
 import zoneinfo
 from datetime import datetime, timedelta
-from . import event_creater
+from src import timebox_creator
 
 
 def parse_time_to_datetime_next_day(time_str, zone):
@@ -20,7 +20,7 @@ def create_events_from_template(template):
         start_datetime = parse_time_to_datetime_next_day(
             box['start'], box['zone'])
         end_datetime = parse_time_to_datetime_next_day(box['end'], box['zone'])
-        event = event_creater.create_event(title=box['title'], start_datetime=start_datetime,
-                                           end_datetime=end_datetime, description=box['description'])
+        event = timebox_creator.create_event(title=box['title'], start_datetime=start_datetime,
+                                             end_datetime=end_datetime, description=box['description'])
         cal.add_component(event)
     return cal

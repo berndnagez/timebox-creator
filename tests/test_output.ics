@@ -31,8 +31,8 @@ DESCRIPTION:ruhig Atmen\, aus dem Fenster schauen\n\nOder: weiterarbeiten
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Arbeitstag abschließen
-DTSTART;TZID=Europe/Berlin:20260206T153000
-DTEND;TZID=Europe/Berlin:20260206T160000
+DTSTART;TZID=Europe/Berlin:20260207T153000
+DTEND;TZID=Europe/Berlin:20260207T160000
 DESCRIPTION:Nächste Schritte für morgen planen\nArbeitsplatz aufräumen\
  nalles zu todoist
 END:VEVENT

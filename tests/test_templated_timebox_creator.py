@@ -1,11 +1,11 @@
-from src import events_from_template_creater
-from src import event_creater
+from src import templated_timebox_creator
+from src import timebox_creator
 
 
 def test_parse_time_to_datetime_next_day():
     time_str = "23:59"
     zone = "Europe/Berlin"
-    dt = events_from_template_creater.parse_time_to_datetime_next_day(
+    dt = templated_timebox_creator.parse_time_to_datetime_next_day(
         time_str, zone)
     assert dt.hour == 23
     assert dt.minute == 59
@@ -31,7 +31,7 @@ def test_create_events_from_template():
             }
         ]
     }
-    cal = events_from_template_creater.create_events_from_template(template)
+    cal = templated_timebox_creator.create_events_from_template(template)
     events = [comp for comp in cal.walk() if comp.name == 'VEVENT']
     assert len(events) == 2
     assert events[0].get('SUMMARY') == "Event 1"

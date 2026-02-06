@@ -1,15 +1,16 @@
-from src import events_writer
-from src import events_from_template_creater
-from src import template_reader
+from src import output
+from src import templated_timebox_creator
+from src import template
 
 
 def test_write_events_to_file():
-    template = template_reader.read_template('templates/test_template.json')
-    cal = events_from_template_creater.create_events_from_template(template)
+    loaded_template = template.read_template('templates/test_template.json')
+    cal = templated_timebox_creator.create_events_from_template(
+        loaded_template)
     file_path = "tests/test_output.ics"
     test_file_path = "tests/test.ics"
 
-    events_writer.write_events_to_file(cal, file_path)
+    output.write_events_to_file(cal, file_path)
 
     with open(test_file_path, 'r') as file:
         expected_content = file.readlines()

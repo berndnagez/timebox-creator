@@ -1,5 +1,5 @@
-from src import event_creater
-from src import events_from_template_creater
+from src import timebox_creator
+from src import templated_timebox_creator
 
 
 def test_create_event():
@@ -8,11 +8,11 @@ def test_create_event():
     end = "11:00"
     description = "This is a test event."
     zone = "Europe/Berlin"
-    start_datetime = events_from_template_creater.parse_time_to_datetime_next_day(
+    start_datetime = templated_timebox_creator.parse_time_to_datetime_next_day(
         start, zone)
-    end_datetime = events_from_template_creater.parse_time_to_datetime_next_day(
+    end_datetime = templated_timebox_creator.parse_time_to_datetime_next_day(
         end, zone)
-    event = event_creater.create_event(
+    event = timebox_creator.create_event(
         title, start_datetime, end_datetime, description)
     assert event.get('SUMMARY') == title
     assert event.get('DESCRIPTION') == description
