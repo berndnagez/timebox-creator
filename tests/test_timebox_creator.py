@@ -1,5 +1,5 @@
-from src import timebox_creator
-from src import timebox_creator
+from src.timebox import timebox_creator
+from src.timebox import timebox_creator
 
 
 def test_create_event():

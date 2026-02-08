@@ -1,4 +1,4 @@
-from src import template
+from src.template import template
 
 
 def test_read_template():

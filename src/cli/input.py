@@ -1,5 +1,5 @@
-from src import timebox_types
-from src import timebox_creator
+from src.timebox import timebox_types
+from src.timebox import timebox_creator
 
 
 def read_valid_number(prompt, max_value):

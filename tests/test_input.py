@@ -1,6 +1,6 @@
 
 from datetime import datetime
-from src import input
+from src.cli import input
 
 
 def test_get_timezone():

@@ -1,7 +1,7 @@
-from src import template
-from src import timebox_creator
-from src import ics_writer
-from src import input
+from src.template import template
+from src.timebox import timebox_creator
+from src.output import ics_writer
+from src.cli import input
 
 
 def main():
@@ -9,6 +9,7 @@ def main():
     if choice == 1:
         print("Creating a new timebox...")
         box = input.show_create_timebox_menu()
+        # Next fragen: Speichern oder als ics exportieren
     elif choice == 2:
         print("Creating a new template...")
         # Implement template creation logic here

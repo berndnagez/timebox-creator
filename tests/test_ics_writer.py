@@ -1,6 +1,6 @@
-from src import ics_writer
-from src import timebox_creator
-from src import template
+from src.output import ics_writer
+from src.timebox import timebox_creator
+from src.template import template
 
 
 def test_write_events_to_file():
