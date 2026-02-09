@@ -3,12 +3,14 @@ from src.timebox import timebox_creator
 from src.output import ics_writer
 from src.cli import input
 
+timezone_conf_path = "./conf/timezone.json"
+
 
 def main():
     choice = input.show_main_menu()
     if choice == 1:
         print("Creating a new timebox...")
-        box = input.show_create_timebox_menu()
+        box = input.show_create_timebox_menu(timezone_conf_path)
         # Next fragen: Speichern oder als ics exportieren
     elif choice == 2:
         print("Creating a new template...")

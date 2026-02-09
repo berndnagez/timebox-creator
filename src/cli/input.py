@@ -1,5 +1,6 @@
 from src.timebox import timebox_types
 from src.timebox import timebox_creator
+from src.cli import timezone
 
 
 def read_valid_number(prompt, max_value):
@@ -58,13 +59,7 @@ def read_valid_time(prompt):
             print(f"Invalid format. Please enter time in HH:MM format.")
 
 
-def get_timezone():
-    # NEXT Dynamische Zeitzone basierend auf dem Standort des Benutzers ermitteln
-    # evtl. nutzen: from zoneinfo import available_timezones
-    return "Europe/Berlin"
-
-
-def show_create_timebox_menu():
+def show_create_timebox_menu(timezone_conf_path):
     # NEXT Evaluierung der Eingaben
     title = read_nonempty_string(
         f"Enter the title of the timebox: ", max_length=40)
@@ -75,7 +70,7 @@ def show_create_timebox_menu():
     end_time = read_valid_time(f"Enter the end time (HH:MM): ")
     description = read_nonempty_string(
         f"Enter notes for the timebox: ", max_length=200)
-    zone = get_timezone()
+    zone = timezone.get_timezone(timezone_conf_path)
     box = timebox_creator.create_box(
         title, start_time, end_time, description, type, zone)
     return box
