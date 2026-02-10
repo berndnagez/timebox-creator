@@ -21,10 +21,30 @@ def test_is_validate_timezone():
     assert returned_boolean == excepted_boolean
 
 
-def test_get_timezone_conf(tmp_path):
+def test_get_saved_timezone(tmp_path):
     file = tmp_path / "test_timezone.json"
     file.write_text('{"timezone": "Europe/Berlin"}')
-    assert timezone.get_timezone_conf(file) == "Europe/Berlin"
+    assert timezone.get_saved_timezone(file) == "Europe/Berlin"
+
+
+def test_get_all_timezones():
+    pass
+
+
+def test_get_regions():
+    pass
+
+
+def test_get_timezones_for_region():
+    pass
+
+
+def test_get_timezone_input():
+    pass
+
+
+def test_choose_from_list():
+    pass
 
 
 def test_get_timezone_input():
@@ -36,7 +56,7 @@ def test_save_timezone(tmp_path):
     zone = "Europe/Berlin"
     timezone.save_timezone(zone, file)
 
-    returned_timezone = timezone.get_timezone_conf(file)
+    returned_timezone = timezone.get_saved_timezone(file)
     assert returned_timezone == zone
 
 
