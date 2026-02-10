@@ -40,7 +40,6 @@ def read_nonempty_string(prompt, max_length=20):
 
 
 def show_available_types(available_timebox_types):
-    print(_("\nAvailable timebox types:"))
     for option_id, timebox_type in enumerate(available_timebox_types, start=1):
         print(f"({option_id}) {timebox_type}")
     return len(available_timebox_types)
@@ -62,6 +61,7 @@ def read_valid_time(prompt):
 def show_create_timebox_menu(timezone: str):
     title = read_nonempty_string(
         _("Enter the title of the timebox: "), max_length=40)
+    print(_("\nAvailable timebox types:"))
     number_of_available_types = show_available_types(timebox_types.get_types())
     type = read_valid_number(
         _("Enter your choice (1-%(num)s): ") % {"num": number_of_available_types}, number_of_available_types)

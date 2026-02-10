@@ -10,7 +10,7 @@ EXCLUDED_REGIONS = {
 }
 
 
-def timezone_conf_exists(conf_file_path: str) -> bool:
+def conf_exists(conf_file_path: str) -> bool:
     if os.path.exists(conf_file_path):
         return True
     else:
@@ -89,7 +89,7 @@ def save_timezone(timezone: str, conf_file_path: str):
 
 
 def get_timezone(conf_file_path: str) -> str:
-    if timezone_conf_exists(conf_file_path):
+    if conf_exists(conf_file_path):
         timezone = get_saved_timezone(conf_file_path)
         if not is_validate_timezone(timezone):
             print(f'No valid timezone found.')

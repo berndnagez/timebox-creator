@@ -4,12 +4,12 @@ from src.timebox import timebox_creator
 from src.output import ics_writer
 from src.cli import input, timezone, language
 
-timezone_conf_path = "./conf/timezone.json"
+conf_path = "./conf/conf.json"
 
 
 def main():
-    language.set_language('de')
-    zone = timezone.get_timezone(timezone_conf_path)
+    language.set_language(conf_path)
+    zone = timezone.get_timezone(conf_path)
     choice = input.show_main_menu()
     if choice == 1:
         print(_("Creating a new timebox..."))

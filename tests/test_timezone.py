@@ -1,13 +1,13 @@
 from src.cli import timezone
 
 
-def test_timezone_conf_exists():
+def test_conf_exists():
     excepted_boolean = True
-    returned_boolean = timezone.timezone_conf_exists("./conf/timezone.json")
+    returned_boolean = timezone.conf_exists("./conf/conf.json")
     assert returned_boolean == excepted_boolean
 
     excepted_boolean = False
-    returned_boolean = timezone.timezone_conf_exists("./conf/mist.json")
+    returned_boolean = timezone.conf_exists("./conf/mist.json")
     assert returned_boolean == excepted_boolean
 
 
