@@ -20,7 +20,7 @@ def main():
         loaded_template = template.read_template(
             'templates/test_template.json')
         cal = timebox_creator.create_events_from_template(loaded_template)
-        ics_writer.write_events_to_file(cal, 'results/output.ics')
+        ics_writer.save_ical(cal, 'results/output.ics')
     elif choice == 4:
         print("Exiting the program. Goodbye!")
         exit()
