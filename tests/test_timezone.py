@@ -31,8 +31,13 @@ def test_get_timezone_input():
     pass
 
 
-def test_write_timezone():
-    pass
+def test_save_timezone(tmp_path):
+    file = tmp_path / "timezone.json"
+    zone = "Europe/Berlin"
+    timezone.save_timezone(zone, file)
+
+    returned_timezone = timezone.get_timezone_conf(file)
+    assert returned_timezone == zone
 
 
 def test_get_timezone():

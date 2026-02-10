@@ -31,8 +31,11 @@ def get_timezone_input():
     # return timezone
 
 
-def write_timezone(timezone: str):
-    pass
+def save_timezone(timezone: str, conf_file_path: str):
+    timezone_dict = {"timezone": timezone}
+    json_str = json.dumps(timezone_dict)
+    with open(f'{conf_file_path}', "w") as f:
+        f.write(json_str)
 
 
 def get_timezone(conf_file_path: str) -> str:
@@ -43,5 +46,5 @@ def get_timezone(conf_file_path: str) -> str:
             timezone = get_timezone_input()
     else:
         timezone = get_timezone_input
-        write_timezone(timezone)
+        save_timezone(timezone, conf_file_path)
     return timezone
