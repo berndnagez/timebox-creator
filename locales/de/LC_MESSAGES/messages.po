@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 12:00+0000\n"
+"PO-Revision-Date: 2026-02-10 12:00+0000\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Creating a new timebox..."
+msgstr "Neue Timebox anlegen..."
+
+msgid "Creating a new template..."
+msgstr "Neue Vorlage erstellen..."
+
+msgid "Loading a template..."
+msgstr "Vorlage laden..."
+
+msgid "Exiting the program. Goodbye!"
+msgstr "Programm beendet. Tschüß!"
+
+msgid "\nWelcome to the Timebox Creator!\n"
+msgstr "\nWillkommen beim Timebox Creator!\n"
+
+msgid "Please select an option:"
+msgstr "Bitte wähle eine Option:"
+
+msgid "(%(num)s) Create a new timebox"
+msgstr "(%(num)s) Neue Timebox anlegen"
+
+msgid "(%(num)s) Create a new template"
+msgstr "(%(num)s) Neue Vorlage anlegen"
+
+msgid "(%(num)s) Load a template"
+msgstr "(%(num)s) Vorlage laden"
+
+msgid "(%(num)s) Exit"
+msgstr "(%(num)s) Beenden"
+
+msgid "Enter your choice (1-%(num)s): "
+msgstr "Auswahl eingeben (1-%(num)s): "
+
+msgid "\nAvailable timebox types:"
+msgstr "\nVerfügbar Timeboxtypen:"
+
+msgid "Enter the title of the timebox: "
+msgstr "Namen für die Timebox eingeben: "
+
+msgid "Enter the start time (HH:MM): "
+msgstr "Startzeit eingeben (HH:mm): "
+
+msgid "Enter the end time (HH:MM): "
+msgstr "Endzeit eingeben (HH:mm): "
+
+msgid "Enter notes for the timebox: "
+msgstr "Notizen für die Timebox einfügen: "
+
+msgid "Invalid time. Please enter a valid time in HH:MM format."
+msgstr "Ungültige Uhrzeit. Bitte eine gültige Uhrzeit im Format HH:mm eingeben."
+
+msgid "Invalid format. Please enter time in HH:MM format."
+msgstr "Ungültiges Format. Bitte gibt die Uhrzeit im Format HH:mm ein."
+
+msgid "Empty input or input too long. Please enter a non-empty string with at most %(num)s characters."
+msgstr "Eingabe leer oder zu lang. Bitte mache eine Eingabe, die nicht leer ist und nicht mehr %(num)s Zeichen hat."
+
+msgid "Invalid choice. Please enter a number between 1 and %(num)s."
+msgstr "Ungültige Auswahl. Bitte eine Nummer zwischen 1 und %(num)s eingeben."
+
+msgid "Invalid input. Please enter a number between 1 and %(num)s."
+msgstr "Ungültige Eingabe. Bitte eine Nummer zwischen 1 und %(num)s eingeben."
+
+msgid "\n\nKeyboard Interruption: Exiting the program. Goodbye!"
+msgstr "\n\nAbbruch: Das Programm wird beendet. Tschüß!"
