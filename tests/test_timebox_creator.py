@@ -61,14 +61,16 @@ def test_create_box():
     title = "Test Box"
     start_time = "10:00"
     end_time = "11:00"
+    day_delta = 0
     description = "This is a test box."
     type = 1
     zone = "Europe/Berlin"
     box = timebox_creator.create_box(
-        title, start_time, end_time, description, type, zone)
+        title, start_time, end_time, day_delta, description, type, zone)
     assert box["title"] == title
     assert box["start"] == start_time
     assert box["end"] == end_time
+    assert box["day_delta"] == day_delta
     assert box["description"] == description
     assert box["type"] == type
     assert box["zone"] == zone

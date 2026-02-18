@@ -28,15 +28,24 @@ def test_get_saved_timezone(tmp_path):
 
 
 def test_get_all_timezones():
-    pass
+    timezones = timezone.get_all_timezones()
+    assert "Europe/Berlin" in timezones
 
 
 def test_get_regions():
-    pass
+    regions = timezone.get_regions()
+    assert "Europe" in regions
+    assert "America" in regions
+    assert "Asia" in regions
+    assert "Africa" in regions
+    assert "Australia" in regions
 
 
 def test_get_timezones_for_region():
-    pass
+    timezones = timezone.get_timezones_for_region("Europe")
+    assert "Europe/Berlin" in timezones
+    assert "Europe/London" in timezones
+    assert "Europe/Paris" in timezones
 
 
 def test_get_timezone_input():

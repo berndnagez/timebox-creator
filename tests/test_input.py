@@ -2,21 +2,21 @@
 from src.cli import input
 
 
-def test_read_valid_number():
-    pass
+def test_show_option_menu(monkeypatch, capsys):
+    intro = _("\nAvailable timebox types:")
+    types = ["Pomodoro", "Short Break", "Long Break"]
 
+    inputs = iter(["abc", "10", "2"])
+    monkeypatch.setattr("builtins.input", lambda _: next(inputs))
 
-def test_read_nonempty_string():
-    pass
+    result = input.show_option_menu(intro, types)
 
+    captured = capsys.readouterr()
+    output = captured.out
 
-def test_read_valid_time():
-    pass
+    assert intro in output
 
+    for i, t in enumerate(types, start=1):
+        assert f"({i}) {t}" in output
 
-def test_show_available_types():
-    available_types = ["default", "15min-break", "30min-break"]
-    excepted_number_of_available_types = 3
-    return_number_of_available_types = input.show_available_types(
-        available_types)
-    assert return_number_of_available_types == excepted_number_of_available_types
+    assert result == 2
