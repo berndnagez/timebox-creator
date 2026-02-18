@@ -11,8 +11,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Creating a new timebox..."
-msgstr "Creating a new timebox..."
+msgid "\nCreating a new timebox..."
+msgstr "\nCreating a new timebox..."
 
 msgid "Creating a new template..."
 msgstr "Creating a new template..."
@@ -20,14 +20,14 @@ msgstr "Creating a new template..."
 msgid "Loading a template..."
 msgstr "Loading a template..."
 
-msgid "Exiting the program. Goodbye!"
-msgstr "Exiting the program. Goodbye!"
+msgid "\nExiting the program. Goodbye!"
+msgstr "\nExiting the program. Goodbye!"
 
-msgid "\nWelcome to the Timebox Creator!\n"
-msgstr "\nWelcome to the Timebox Creator!\n"
+msgid "\nWelcome to the Timebox Creator!"
+msgstr "\nWelcome to the Timebox Creator!"
 
-msgid "Please select an option:"
-msgstr "Please select an option:"
+msgid "\nPlease select an option:"
+msgstr "\nPlease select an option:"
 
 msgid "(%(num)s) Create a new timebox"
 msgstr "(%(num)s) Create a new timebox"
@@ -68,6 +68,9 @@ msgstr "Invalid format. Please enter time in HH:MM format."
 msgid "Empty input or input too long. Please enter a non-empty string with at most %(num)s characters."
 msgstr "Empty input or input too long. Please enter a non-empty string with at most %(num)s characters."
 
+msgid "Input too long. Please enter a string with at most %(num)s characters."
+msgstr "Input too long. Please enter a string with at most %(num)s characters."
+
 msgid "Invalid choice. Please enter a number between 1 and %(num)s."
 msgstr "Invalid choice. Please enter a number between 1 and %(num)s."
 
@@ -76,3 +79,21 @@ msgstr "Invalid input. Please enter a number between 1 and %(num)s."
 
 msgid "\n\nKeyboard Interruption: Exiting the program. Goodbye!"
 msgstr "\n\nKeyboard Interruption: Exiting the program. Goodbye!"
+
+msgid "\nWhat would you like to do next?"
+msgstr "\nWhat would you like to do next?"
+
+msgid "Save timebox as ical"
+msgstr "Save timebox as ical"
+
+msgid "Save timebox as template"
+msgstr "Save timebox as template"
+
+msgid "Save timebox as ical and template"
+msgstr "Save timebox as ical and template"
+
+msgid "Create another timebox"
+msgstr "Create another timebox"
+
+msgid "Return to main menu"
+msgstr "Return to main menu"

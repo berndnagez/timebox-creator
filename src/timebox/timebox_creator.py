@@ -34,13 +34,35 @@ def create_events_from_template(template):
     return cal
 
 
-def create_box(title, start_time, end_time, description, type, zone):
+def create_box(title, start_time, end_time, day_delta, description, type, zone):
     box = {
         "title": title,
         "start": start_time,
         "end": end_time,
+        "day_delta": day_delta,
         "description": description,
         "type": type,
         "zone": zone
     }
     return box
+
+
+def save_as_ical(box):
+    pass
+
+
+def save_as_template(box):
+    pass
+
+
+def save_as_ical_and_template(box):
+    pass
+
+
+def save_timebox_as(ical: bool, template: bool, box: dict):
+    if ical and not template:
+        save_as_ical(box)
+    elif not ical and template:
+        save_as_template(box)
+    elif ical and template:
+        save_as_ical_and_template(box)

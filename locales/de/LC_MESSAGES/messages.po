@@ -11,8 +11,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Creating a new timebox..."
-msgstr "Neue Timebox anlegen..."
+msgid "\nCreating a new timebox..."
+msgstr "\nNeue Timebox anlegen..."
 
 msgid "Creating a new template..."
 msgstr "Neue Vorlage erstellen..."
@@ -20,14 +20,14 @@ msgstr "Neue Vorlage erstellen..."
 msgid "Loading a template..."
 msgstr "Vorlage laden..."
 
-msgid "Exiting the program. Goodbye!"
-msgstr "Programm beendet. Tschüß!"
+msgid "\nExiting the program. Goodbye!"
+msgstr "\nProgramm beendet. Tschüß!"
 
-msgid "\nWelcome to the Timebox Creator!\n"
-msgstr "\nWillkommen beim Timebox Creator!\n"
+msgid "\nWelcome to the Timebox Creator!"
+msgstr "\nWillkommen beim Timebox Creator!"
 
-msgid "Please select an option:"
-msgstr "Bitte wähle eine Option:"
+msgid "\nPlease select an option:"
+msgstr "\nBitte wähle eine Option:"
 
 msgid "(%(num)s) Create a new timebox"
 msgstr "(%(num)s) Neue Timebox anlegen"
@@ -66,7 +66,10 @@ msgid "Invalid format. Please enter time in HH:MM format."
 msgstr "Ungültiges Format. Bitte gibt die Uhrzeit im Format HH:mm ein."
 
 msgid "Empty input or input too long. Please enter a non-empty string with at most %(num)s characters."
-msgstr "Eingabe leer oder zu lang. Bitte mache eine Eingabe, die nicht leer ist und nicht mehr %(num)s Zeichen hat."
+msgstr "Eingabe leer oder zu lang. Bitte mache eine Eingabe, die nicht leer ist und nicht mehr als %(num)s Zeichen hat."
+
+msgid "Input too long. Please enter a string with at most %(num)s characters."
+msgstr "Eingabe zu lang. Bitte mache eine Eingabe, die nicht mehr als %(num)s Zeichen hat."
 
 msgid "Invalid choice. Please enter a number between 1 and %(num)s."
 msgstr "Ungültige Auswahl. Bitte eine Nummer zwischen 1 und %(num)s eingeben."
@@ -76,3 +79,21 @@ msgstr "Ungültige Eingabe. Bitte eine Nummer zwischen 1 und %(num)s eingeben."
 
 msgid "\n\nKeyboard Interruption: Exiting the program. Goodbye!"
 msgstr "\n\nAbbruch: Das Programm wird beendet. Tschüß!"
+
+msgid "\nWhat would you like to do next?"
+msgstr "\nWas möchtest du als nächstes tun?"
+
+msgid "Save timebox as ical"
+msgstr "Timebox als ical speichern"
+
+msgid "Save timebox as template"
+msgstr "Timebox als Vorlage speichern"
+
+msgid "Save timebox as ical and template"
+msgstr "Timebox als ical und Vorlage speichern"
+
+msgid "Create another timebox"
+msgstr "Weitere Timebox anlegen"
+
+msgid "Return to main menu"
+msgstr "Zurück zum Hauptmenü"
