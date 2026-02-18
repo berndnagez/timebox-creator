@@ -5,9 +5,9 @@ from src.cli import prompts
 
 
 def show_option_menu(intro: str, options: list) -> int:
-    print(intro)
+    print(_(intro))
     for option_id, option in enumerate(options, start=1):
-        print(_("(%(num)s) %(option)s") % {"num": option_id, "option": option})
+        print(f"{option_id}. {_(option)}")
     choice = input_validation.read_valid_number(
         _("Enter your choice (1-%(num)s): ") % {"num": len(options)}, len(options))
     return choice

@@ -29,17 +29,17 @@ msgstr "\nWelcome to the Timebox Creator!"
 msgid "\nPlease select an option:"
 msgstr "\nPlease select an option:"
 
-msgid "(%(num)s) Create a new timebox"
-msgstr "(%(num)s) Create a new timebox"
+msgid "Create a new timebox"
+msgstr "Create a new timebox"
 
-msgid "(%(num)s) Create a new template"
-msgstr "(%(num)s) Create a new template"
+msgid "Create a new template of different timeboxes"
+msgstr "Create a new template of different timeboxes"
 
-msgid "(%(num)s) Load a template"
-msgstr "(%(num)s) Load a template"
+msgid "Load a template of different timeboxes"
+msgstr "Load a template of different timeboxes"
 
-msgid "(%(num)s) Exit"
-msgstr "(%(num)s) Exit"
+msgid "Exit"
+msgstr "Exit"
 
 msgid "Enter your choice (1-%(num)s): "
 msgstr "Enter your choice (1-%(num)s): "

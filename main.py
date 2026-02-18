@@ -22,7 +22,7 @@ def main():
         elif choice == 3:
             print(_("Loading a template..."))
             loaded_template = template.read_template(
-                'templates/test_template.json')
+                'templates/default.json')
             cal = timebox_creator.create_events_from_template(loaded_template)
             ics_writer.save_ical(cal, 'results/output.ics')
         elif choice == 4:
